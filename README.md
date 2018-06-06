@@ -58,4 +58,4 @@ Addition and Subtraction Benchmark
 
 Most of the time, integer performance is on par with floating point, with exception of division.
 
-The result of the benchmark shown the performance of floating point arithmetic has caught up with the integer in the last 15 years. This very much removes the requirement to having our own custom fixed point type to wrench the last drop of performance from processor.
+The performance of floating point arithmetic has caught up with the integer in the last 15 years. This very much removes the requirement to having our own custom fixed point type to wrench the last drop of performance out of processor.
