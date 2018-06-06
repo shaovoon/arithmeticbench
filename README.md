@@ -1,6 +1,6 @@
 # Floating Point and Integer Arithmetic Benchmark
 
-All the integer and double types used in Benchmark are 64bit. Clarification: SmallInt and SmallDouble refers to small values stored in int64_t and double.
+All the integer and double types used in Benchmark are 64bit. Timing is based on looping 100 million times. Clarification: SmallInt and SmallDouble refers to small values stored in int64_t and double, not the types.
 
 ## CSharp x64 Benchmark 
 
