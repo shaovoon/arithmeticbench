@@ -58,6 +58,6 @@ Addition and Subtraction Benchmark
 
 Most of the time, integer performance is on par with floating point, with exception of division.
 
-The performance of floating point arithmetic has caught up with the integer in the last 15 years. This very much removes the requirement to having our own custom fixed point type to wrench the last drop of performance out of processor. 
+The performance of floating point arithmetic has caught up with the integer in the last 15 years. This very much removes the requirement to having our own custom fixed point type to wrench the last drop of performance out of processor. For those who are not familiar, fixed point is arithmetic type which is like floating point except its decimal point is fixed, does not move, hence its name. The main difference is fixed point arithmetic is executed on the integer unit, not on floating point unit. Fixed point type was relevant during the period where integer perf was crown over floating point.
 
 Any suggestion on how to improve the nature of benchmark or constructive criticism on what I have been doing wrong, is all welcome.
