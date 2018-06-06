@@ -2,6 +2,12 @@
 
 All the integer and double types used in Benchmark are 64bit. Timing is based on looping 100 million times. Clarification: SmallInt and SmallDouble refers to small values (10-10000) stored in int64_t and double, not refering to the type size. Big integer and double value range from 10,000 to 1000,000, if they are any bigger, there would be overflow in 64bit integer.
 
+## Hardware Specs
+
+* __Processor:__ Intel i7-6700 CPU @ 3.40GHz, 3400 Mhz, 4 Cores, 8 Logical Processors
+* __RAM:__ 16 GB
+* __Graphics Card:__ NVIDIA GeForce GTX 1060 6GB
+
 ## CSharp x64 Benchmark 
 
 Note: x86-32 executable typically has worse integer performance than floating point(not shown here); You can build as x86-32 executable and run it to see for yourself.
