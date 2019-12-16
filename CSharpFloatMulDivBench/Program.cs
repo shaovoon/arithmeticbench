@@ -59,6 +59,14 @@ namespace CSharpFloatMulDivBench
             bigDoubleList.Add(558721.0);
         }
 
+        static void DisplayElapseTime(string title, TimeSpan ts)
+        {
+            // Format and display the TimeSpan value.
+            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
+                ts.Minutes, ts.Seconds,
+                ts.Milliseconds);
+            Console.WriteLine(title + elapsedTime);
+        }
         static double MulBigDouble(int loop)
         {
             Stopwatch stopWatch = new Stopwatch();
@@ -77,14 +85,7 @@ namespace CSharpFloatMulDivBench
             }
 
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("MulBigDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("MulBigDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -105,14 +106,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("MulBigInt RunTime:" + elapsedTime);
+            DisplayElapseTime("MulBigInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -133,15 +127,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("DivBigDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("DivBigDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -162,14 +148,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("DivBigInt RunTime:" + elapsedTime);
+            DisplayElapseTime("DivBigInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -190,15 +169,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("MulSmallDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("MulSmallDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -219,14 +190,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("MulSmallInt RunTime:" + elapsedTime);
+            DisplayElapseTime("MulSmallInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -247,15 +211,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("DivSmallDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("DivSmallDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -276,14 +232,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("DivSmallInt RunTime:" + elapsedTime);
+            DisplayElapseTime("DivSmallInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -304,15 +253,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("AddBigDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("AddBigDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -333,14 +274,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("AddBigInt RunTime:" + elapsedTime);
+            DisplayElapseTime("AddBigInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -361,15 +295,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("SubBigDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("SubBigDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -390,14 +316,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("SubBigInt RunTime:" + elapsedTime);
+            DisplayElapseTime("SubBigInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -418,15 +337,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("AddSmallDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("AddSmallDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -447,14 +358,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("AddSmallInt RunTime:" + elapsedTime);
+            DisplayElapseTime("AddSmallInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -475,15 +379,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("SubSmallDouble RunTime:" + elapsedTime);
+            DisplayElapseTime("SubSmallDouble RunTime:", stopWatch.Elapsed);
 
             return result;
         }
@@ -504,14 +400,7 @@ namespace CSharpFloatMulDivBench
                 }
             }
             stopWatch.Stop();
-            // Get the elapsed time as a TimeSpan value.
-            TimeSpan ts = stopWatch.Elapsed;
-
-            // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}.{2:000}",
-                ts.Minutes, ts.Seconds,
-                ts.Milliseconds);
-            Console.WriteLine("SubSmallInt RunTime:" + elapsedTime);
+            DisplayElapseTime("SubSmallInt RunTime:", stopWatch.Elapsed);
 
             return result;
         }
